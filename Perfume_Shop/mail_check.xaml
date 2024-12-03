@@ -1,0 +1,64 @@
+﻿<Window x:Class="Perfume_Shop.mail_check"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Perfume_Shop"
+        mc:Ignorable="d"
+                Title="Проверка" Height="400" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Resources>
+
+        <Style TargetType="{x:Type TextBox}" x:Key="RoundedTextBoxStyle">
+            <Setter Property="Background" Value="#FFEEEEEE"/>
+            <Setter Property="BorderBrush" Value="#FFCCCCCC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border Background="{TemplateBinding Background}" 
+                        BorderBrush="{TemplateBinding BorderBrush}" 
+                        BorderThickness="{TemplateBinding BorderThickness}" 
+                        CornerRadius="20">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <Style TargetType="{x:Type Button}" x:Key="RoundedButtonStyle">
+            <Setter Property="Background" Value="#FF6200EE"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#FF6200EE"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" 
+                        BorderBrush="{TemplateBinding BorderBrush}" 
+                        BorderThickness="{TemplateBinding BorderThickness}" 
+                        CornerRadius="19">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBox x:Name="LegitTextBox" MaxLength="5" Margin="117,0,117,0" Style="{StaticResource RoundedTextBoxStyle}" Height="37" VerticalAlignment="Center"/>
+        <Label Content="Введите код из почты" VerticalAlignment="Bottom" FontSize="30" Margin="52,0,0,224" Height="58" Foreground="#FF6200EE" HorizontalAlignment="Left" Width="314"/>
+        <Button x:Name="legit" Content="Поддтвердить" VerticalAlignment="Top" Margin="109,230,109,0" Click="legit_click" Height="37" Style="{StaticResource RoundedButtonStyle}"/>
+
+
+    </Grid>
+
+</Window>

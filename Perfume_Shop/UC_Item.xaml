@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Perfume_Shop.UC_Item"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Perfume_Shop"
+             mc:Ignorable="d" 
+                   d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid>
+
+        <Rectangle Stroke="#FF6200EE" RadiusX="45.722" RadiusY="45.722" Fill="#FFEEEEEE" StrokeThickness="1" Margin="0,-1,-138,25"/>
+        <StackPanel Orientation="Horizontal">
+
+            <StackPanel Height="402" Width="800">
+                <Label x:Name="NameItemlable_basket" Foreground="#FF6200EE" Width="406" Height="112" Margin="35,96,0,0" FontSize="35"/>
+                <Label Width="312" x:Name="PriceItemLable_basket" Height="85" Margin="-55,65,0,5" FontSize="40" Foreground="#FF6200EE"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

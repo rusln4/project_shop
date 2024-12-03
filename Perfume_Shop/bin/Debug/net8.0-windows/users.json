@@ -1,0 +1,13 @@
+[
+  {
+    "Id": "38b391a7-1b96-49f0-a879-d43be54d1fd4",
+    "LastName": "Khudyakov",
+    "Name": "Ruslan",
+    "Otchestvo": "Olegovich",
+    "BirthDate": "2006-12-01T00:00:00",
+    "Email": "lilih77772@gmail.com",
+    "Password": "qwe123",
+    "Check": 1,
+    "LockTime": "0001-01-01T00:00:00"
+  }
+]

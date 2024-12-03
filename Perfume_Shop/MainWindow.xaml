@@ -1,0 +1,76 @@
+﻿<Window x:Class="Perfume_Shop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Perfume_Shop"
+        mc:Ignorable="d"
+        Title="Вход" Height="800" MinHeight="800" MinWidth="1200" Width="1200" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}" x:Key="RoundedTextBoxStyle">
+            <Setter Property="Background" Value="#FFEEEEEE"/>
+            <Setter Property="Foreground" Value="#FF6200EE"/>
+            <Setter Property="BorderBrush" Value="#FFCCCCCC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="20">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type Button}" x:Key="RoundedButtonStyle">
+            <Setter Property="Background" Value="#FF6200EE"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#FF6200EE"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="15,10"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="19">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Border BorderThickness="3" BorderBrush="#FF6200EE" CornerRadius="10" Margin="20">
+            <Grid Margin="20">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Label Content="Вход" Foreground="#FF6200EE" FontSize="36" HorizontalAlignment="Center" Margin="0,0,0,20" Width="93"/>
+
+                    <Label Content="Электронная почта:" Foreground="#FF6200EE" FontSize="24" Margin="0,10,0,5"/>
+                    <TextBox x:Name="EmailTextBox" MaxLength="30" FontSize="22" Style="{StaticResource RoundedTextBoxStyle}" Height="50" Margin="0,0,0,20"/>
+
+                    <Label Content="Пароль:" Foreground="#FF6200EE" FontSize="24" Margin="0,10,0,5"/>
+                    <TextBox x:Name="PasswordTextBox" MaxLength="20" FontSize="22" Style="{StaticResource RoundedTextBoxStyle}" Height="50" Margin="0,0,0,20"/>
+
+                    <Button Content="Войти" Click="Button_Click_enter" Height="60" Style="{StaticResource RoundedButtonStyle}" Margin="0,20,0,20" FontSize="24"/>
+
+                    <Button Content="Нет аккаунта? Зарегистрироваться" FontSize="20" Background="Transparent" BorderThickness="0" Foreground="#FF70A0B4" Height="50" Click="Button_Click_2" Margin="0,10,0,20"/>
+
+                    <Button x:Name="forget_button" Content="Забыли пароль?" FontSize="20" Background="Transparent" BorderThickness="0" Foreground="#FF70A0B4" Height="50" Click="Button_Click_1" Margin="0,10,0,20"/>
+
+                    <Button Content="Войти как гость" Visibility="Hidden" Background="Transparent" BorderThickness="0" Foreground="#FF70A0B4" Height="50" Style="{StaticResource RoundedButtonStyle}" Click="Button_Click" Margin="0,10,0,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

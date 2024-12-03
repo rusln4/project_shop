@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "DOLCE & GABBANA",
+    "Count": 92,
+    "Price": 25300,
+    "Image": "C:\\Mac\\Home\\Desktop\\Картинки\\dukhi-flakon-parfium-blesk-serdechki.jpg",
+    "Gender": "Мужские"
+  },
+  {
+    "Name": "Духи Мужские",
+    "Count": 4,
+    "Price": 12500,
+    "Image": "C:\\Mac\\Home\\Desktop\\Картинки\\ezgif-1-1d5b0eec4828.png",
+    "Gender": "Мужские"
+  },
+  {
+    "Name": "Духи Женские",
+    "Count": 9,
+    "Price": 11300,
+    "Image": "C:\\Mac\\Home\\Desktop\\Картинки\\shutterstock_526532299_1.jpg",
+    "Gender": "Мужские"
+  },
+  {
+    "Name": "Мужской аромат",
+    "Count": 45,
+    "Price": 350000,
+    "Image": "C:\\Mac\\Home\\Desktop\\Картинки\\1642143933_6-abrakadabra-fun-p-fon-dukhi-14.jpg",
+    "Gender": "Мужские"
+  },
+  {
+    "Name": "Смолягин",
+    "Count": 190,
+    "Price": 3500,
+    "Image": "C:\\Mac\\Home\\Desktop\\Картинки\\c4b6192535f3c7fdd1ec9b4c77cb581e.jpg",
+    "Gender": "Мужские"
+  }
+]
