@@ -205,7 +205,7 @@ namespace Perfume_Shop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Perfume_Shop;component/shop_main.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Perfume_Shop;V1.0.0.0;component/shop_main.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\shop_main.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
